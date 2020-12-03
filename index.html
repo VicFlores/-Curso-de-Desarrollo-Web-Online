@@ -5,28 +5,29 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portafolio</title>
 	<link rel="icon" type="image/png" href="https://i.imgur.com/ZreFSS7.png">
+	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-	<header>
+	<header class="header">
 
 		<div>
-			<figure>
+			<figure class="logo">
 				<img src="https://i.imgur.com/nVRYWaj.png?1" alt="Logo">
 			</figure>
-		</div>
 
-		<nav>
-			<ol>
-				<li><a href="">Portafolio</a></li>
-				<li><a href="">Experiencia</a></li>
-				<li><a href="">Trabajemos juntos</a></li>
-			</ol>
-		</nav>
+			<nav class="menu">
+				<ol>
+					<li><a class="link" href="./portafolio.html">Portafolio</a></li>
+					<li><a class="link" href="#experiencia">Experiencia</a></li>
+					<li><a class="link" href="#contacto">Trabajemos juntos</a></li>
+				</ol>
+			</nav>
+		</div>
 
 	</header>
 
-	<section> 
+	<section class="hero"> 
 		
 		<h1>Hola! Soy <strong>Vic Flores</strong> <br> 
 			Desarrollador <strong>Backend</strong> y aprendiz de <strong>Frontend</strong>
@@ -36,45 +37,48 @@
 
 	</section>
 
-	<section>
+	<section class="portfolio">
 		
 		<h2>Portafolio (Proyectos destacados)</h2>
 		
-		<article>
-			<h3>Platzi video</h3>
-			<h6>React Native / React</h6>
-			<p><small><strong>Fecha:</strong> 01/02/2020</small></p>
-			<p><small><strong>Puedes verlo en:</strong> www.ejemplo.com</small></p><p></p>
-			<p>Curso ---------- desarrollado en Platzi</p>
+		<article class="project">
+			<h3 class="project__title">Platzi video</h3>
+			<h6 class="project__course">React Native / React</h6>
+			<p class="project__date"><small><strong>Fecha:</strong> 01/02/2020</small></p>
+			<p class="project__URL"><small><strong>Puedes verlo en:</strong> www.ejemplo.com</small></p><p></p>
+			<p class="project__description">Curso ---------- desarrollado en Platzi</p>
 
-			<img src="https://i.imgur.com/LyopkWE.png"  width="500" alt="Proyecto curso react native">
+			<figure class="project-imageContainer">
+				<img class="project__image" src="https://i.imgur.com/LyopkWE.png"  width="500" alt="Proyecto curso react native">
+			</figure>
+			
 		</article>
 
 	</section>
 
-	<section>
+	<section id="experiencia">
 
 		<h2>Mas sobre mi experiencia</h2>
 
-		<article>
+		<article class="event">
 
-			<figure>
-				<img src="https://i.imgur.com/JE12vp7.jpg" width="500" alt="">
+			<figure class="event__imageContainer">
+				<img class="event__image" src="https://i.imgur.com/JE12vp7.jpg" width="500" alt="">
 			</figure>
 
-			<h3>PlatziConf Mexico 2018</h3>
+			<h3 class="event__title">PlatziConf Mexico 2018</h3>
 
-			<p>Descripción acerca de mi experiencia</p>
+			<p class="event__description">Descripción acerca de mi experiencia</p>
 
-			<a href="">Ver conferencia</a>
+			<a class="event__url" href="https://www.youtube.com/watch?v=ZN8gfdLmvkI" target="_blank">Ver conferencia</a>
 
 		</article>
 
 	</section>
 
-	<section>
+	<section id="contacto" class="contact">
 
-		<form action="">
+		<form class="form__email" action="">
 			<h3>¿Creamos algo juntos?</h3>
 			<input type="text" placeholder="Dejame tu email">
 			<button>Enviar</button>
@@ -82,7 +86,7 @@
 
 	</section>
 
-	<footer> Footer </footer>
+	<footer class="footer"> Footer </footer>
 	
 </body>
 </html>
